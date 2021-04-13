@@ -23,7 +23,6 @@ User.init(
             unique: true,
             validate: {
                 isAlphanumeric: true,
-                isNumeric: true,
                 len: [6],
             },
         },
