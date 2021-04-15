@@ -5,17 +5,19 @@
     </div>
     </form>
 </section>
+{{#each posts as |post|}}
 <section class="container">
-    {{#each posts as |post|}}
+
     <div class="card" style="width: 18rem;">
         <div class="card-body">
 
             <h5 class="card-title">{{post.title}}</h5>
             <h6>Created by: {{post.user.username}} </h6>
             <p class="card-text">{{post.content}}</p>
-            <a href="#" class="card-link">Card link</a>
+
 
         </div>
     </div>
-    {{/each}}
+
 </section>
+{{/each}}
